@@ -95,3 +95,5 @@ app.listen({ port: 4123 }, () => {
   console.log(`🚀 REST Server ready at http://localhost:4123/api`);
   console.log(`🚀 Swagger Docs ready at http://localhost:4123/docs`);
 });
+
+export default app;
