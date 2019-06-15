@@ -3,6 +3,7 @@ import { ApolloServer, makeExecutableSchema } from "apollo-server-express";
 import express from "express";
 import sofa, { OpenAPI } from "sofa-api";
 import swaggerUi from "swagger-ui-express";
+import bodyParser from "body-parser";
 
 // This is a (sample) collection of books we'll be able to query
 // the GraphQL server for.  A more complete example might fetch
@@ -71,6 +72,7 @@ const openApi = OpenAPI({
 const server = new ApolloServer({ schema });
 
 const app = express();
+app.use(bodyParser.json());
 server.applyMiddleware({ app, path: "/graphql" });
 
 // Sofa REST Endpoint
