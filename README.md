@@ -11,7 +11,7 @@ This produces three endpoints:
 
 - [GraphQL Server - http://localhost:4123/graphql](http://localhost:4123/graphql)
 - [Swagger UI - http://localhost:4123/docs](http://localhost:4123/docs)
-- [REST API Endpoing - http://localhost:4123/api](http://localhost:4123/api)
+- [REST API Endpoint - http://localhost:4123/api](http://localhost:4123/api)
 
 ## Further Readings
 
